@@ -3,6 +3,10 @@
 # Python 3.10 ONLY (ROS 2 Humble compatibility)
 # ============================================================================
 
+# Build tools (install FIRST)
+setuptools>=68.0.0
+wheel>=0.41.0
+
 # Core
 numpy>=1.23.0,<1.25.0    # Compatible: scipy sistema + sklearn + tensorflow
 scipy>=1.10.0,<1.12.0    # Explicit version (evita conflito com apt)
@@ -14,8 +18,8 @@ scikit-learn~=1.3.0      # Permite patches (1.3.1, 1.3.2) mas não 1.4.x
 
 # Visualization
 matplotlib~=3.8
-seaborn~=0.13
 plotly~=5.18
+seaborn~=0.13
 
 # ROS2 Python (installed via rosdep, listed for reference)
 # rclpy
@@ -23,17 +27,17 @@ plotly~=5.18
 # sensor_msgs
 
 # Deep Learning (opcional - para LSTM)
-tensorflow>=2.13.0
-keras>=2.13.0
+tensorflow>=2.13.0,<2.16.0
+keras>=2.13.0,<2.16.0
 
 # XGBoost (opcional - para meta-classifier)
 xgboost>=1.7.0
 
 # Utilities
-pytest>=7.4.0
 black>=23.0.0
 flake8>=6.0.0
 mypy>=1.4.0
+pytest>=7.4.0
 
 # Progress bars
 tqdm>=4.65.0
