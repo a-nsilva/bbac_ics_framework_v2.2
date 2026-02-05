@@ -1,0 +1,39 @@
+{
+  "name": "BBAC Framework Development",
+  "image": "osrf/ros:humble-desktop-full",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.10"
+    }
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-iot.vscode-ros",
+        "ms-vscode.cpptools"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python3.10",
+        "editor.formatOnSave": true,
+        "files.exclude": {
+          "**/__pycache__": true,
+          "**/*.pyc": true
+        }
+      }
+    }
+  },
+  
+  "remoteEnv": {
+    "ROS_DOMAIN_ID": "42",
+    "ROS_LOCALHOST_ONLY": "1",
+    "PYTHONPATH": "/workspaces/bbac_ics_framework_v2.2/src"
+  },
+  
+  "postCreateCommand": "bash setup.sh",
+  
+  "forwardPorts": [8888, 8501]
+}
