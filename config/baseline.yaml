@@ -1,0 +1,15 @@
+# BBAC Framework - Baseline Configuration
+# Adaptive baseline settings for behavioral modeling
+
+baseline:
+  # Sliding window configuration
+  window_days: 10                    # Number of days for baseline window
+  recent_weight: 0.7                 # Weight for recent data (70%)
+  # historical_weight is automatically 1 - recent_weight (30%)
+  
+  # Historical baseline archiving
+  max_historical_baselines: 10       # Maximum number of archived baselines per agent
+  
+  # Baseline update triggers
+  update_on_buffer_full: true        # Update when trusted buffer is full
+  update_on_drift_detected: false    # Update when drift is detected (future)

@@ -1,0 +1,47 @@
+# BBAC Framework - ROS2 and General Parameters
+# System-wide configuration
+
+ros:
+  node_name: bbac_node
+  target_latency_ms: 100.0          # Target decision latency (sub-100ms goal)
+  qos_depth: 10                     # ROS2 QoS queue depth
+
+# File paths
+paths:
+  data_dir: data/100k
+  profiles_dir: profiles
+  logs_dir: logs
+  quarantine_dir: quarantine
+  
+  # Dataset files
+  train_file: bbac_trainer.csv
+  validation_file: bbac_validation.csv
+  test_file: bbac_test.csv
+  #agents_file: agents.json
+  #anomaly_metadata_file: anomaly_metadata.json 
+
+# ML parameters
+ml_params:
+  statistical:
+    anomaly_threshold: 0.5           # Statistical engine threshold
+    contamination: 0.1  # Para Isolation Forest
+  
+  sequence:
+    anomaly_threshold: 0.5           # Sequence engine threshold
+    sequence_length: 5   # Para LSTM
+
+# Continuous learning
+learning:
+  buffer_size: 1000                  # Trusted buffer size before triggering updates
+  min_samples_for_update: 100        # Minimum samples required for profile update
+
+# Policy engine
+policy:
+  maintenance_hours: [2, 3]          # Maintenance hours (2 AM - 4 AM)
+
+# RBAC enforcement
+#rbac: {}
+
+#request_topic: "/access_requests"
+#decision_topic: "/access_decisions"
+#emergency_topic: "/emergency_alerts"

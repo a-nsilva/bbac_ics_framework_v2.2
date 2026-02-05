@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>bbac_framework</name>
+  <version>1.0.0</version>
+  <description>
+    BBAC ICS Framework - Behavioral-Based Access Control for Industrial Control Systems.
+    
+    Hybrid access control system combining rule-based policies, behavioral analysis,
+    and machine learning for adaptive security in ICS environments.
+    
+    Compatible with ROS2 Humble and Python 3.10 only.
+  </description>
+  
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+  
+  <url type="website">https://github.com/yourusername/bbac-framework</url>
+  <url type="repository">https://github.com/yourusername/bbac-framework</url>
+  <url type="bugtracker">https://github.com/yourusername/bbac-framework/issues</url>
+  
+  <author email="your.email@example.com">Your Name</author>
+  
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  
+  <!-- Build dependencies -->
+  <build_depend>rosidl_default_generators</build_depend>
+  
+  <!-- Execution dependencies -->
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  
+  <!-- Python 3.10 strict requirement -->
+  <exec_depend>python3</exec_depend>
+  
+  <!-- Python dependencies (system packages via apt when available) -->
+  <!-- Core ML -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-pandas</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>python3-sklearn</exec_depend>
+  
+  <!-- Visualization -->
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-seaborn</exec_depend>
+  
+  <!-- Note: plotly typically installed via pip, not in rosdep -->
+  <!-- Install via: pip3 install plotly~=5.18 -->
+  
+  <!-- Test dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  
+  <!-- Message generation -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

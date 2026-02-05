@@ -1,0 +1,18 @@
+# BBAC Framework - Decision Thresholds
+# Risk-based decision boundaries and trust filters
+
+thresholds:
+  # Authentication
+  max_auth_attempts: 3               # Maximum authentication attempts before lockout
+  
+  # Trust filter (continuous learning)
+  trust_threshold: 0.8               # Minimum trust score to update profiles
+  min_confidence_for_update: 0.7     # Minimum decision confidence for updates
+  require_grant_for_update: true     # Only update on grant decisions
+  
+  # Decision boundaries (graduated response)
+  # High score = normal behavior = low risk
+  t1_allow: 0.7        # Above T1: Grant access (low risk)
+  t2_mfa: 0.5          # T2-T1: Require MFA (medium risk)
+  t3_review: 0.3       # T3-T2: Manual review (high risk)
+  # Below T3: Deny (critical risk)

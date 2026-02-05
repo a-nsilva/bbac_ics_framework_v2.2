@@ -1,0 +1,21 @@
+# BBAC Framework - Fusion Configuration
+# Score fusion and decision combining strategies
+
+fusion:
+  # Fusion method
+  # Options: 'weighted_voting', 'rule_priority', 'high_confidence_denial'
+  fusion_method: weighted_voting
+  
+  # Layer weights (must sum to 1.0)
+  weights:
+    rule: 0.4           # Policy/RuBAC layer weight
+    behavioral: 0.3     # Statistical analysis layer weight
+    ml: 0.3             # ML/Sequence layer weight
+  
+  # Thresholds
+  high_confidence_threshold: 0.9   # Threshold for high-confidence denial strategy
+  decision_threshold: 0.5          # Threshold for grant vs deny (score >= threshold → grant)
+  
+  # Future: Meta-classifier settings
+  use_meta_classifier: false
+  meta_classifier_model: logistic_regression  # or 'xgboost'
