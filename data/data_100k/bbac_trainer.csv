@@ -1,8 +1,0 @@
-log_id,timestamp,session_id,user_id,agent_type,robot_type,human_role,action,resource,resource_type,human_present,emergency_flag,location,previous_action,auth_status,attempt_count,rule_applied
-log_20251201_000000_000000_robot_camera_24,2025-12-01T00:00:00,session_20251201_000000_robot_camera_24,robot_camera_24,robot,camera_robot,,read,sensor_motion_01,sensor,False,False,warehouse,
-log_20251201_060000_000000_robot_camera_24,2025-12-01T00:00:00,session_20251201_060000_robot_camera_24,robot_camera_24,robot,camera_robot,,monitor,database_footage,database,False,False,zone_a,
-log_20251201_000000_000000_robot_camera_26,2025-12-01T00:00:00,session_20251201_000000_robot_camera_26,robot_camera_26,robot,camera_robot,,monitor,camera_zone_b,camera,False,False,maintenance_bay,
-log_20251201_000000_000000_robot_camera_22,2025-12-01T00:00:00,session_20251201_000000_robot_camera_22,robot_camera_22,robot,camera_robot,,write,sensor_motion_02,sensor,False,False,maintenance_bay,
-log_20251201_000000_000000_robot_camera_17,2025-12-01T00:00:00,session_20251201_000000_robot_camera_17,robot_camera_17,robot,camera_robot,,monitor,database_alerts,database,False,False,zone_a,
-log_20251201_000000_000000_robot_camera_20,2025-12-01T00:00:00,session_20251201_000000_robot_camera_20,robot_camera_20,robot,camera_robot,,monitor,sensor_motion_02,sensor,False,False,production_floor,
-log_20251201_000000_000000_robot_camera_25,2025-12-01T00:00:00,session_20251201_000000_robot_camera_25,robot_camera_25,robot,camera_robot,,write,database_alerts,database,False,False,inspection_area,
