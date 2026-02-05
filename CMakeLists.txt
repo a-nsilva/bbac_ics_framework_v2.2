@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AccessDecision.msg"
   "msg/LayerDecisionDetail.msg"
   "msg/EmergencyAlert.msg"
+  "srv/ReconfigureLayers.srv"
   DEPENDENCIES std_msgs
 )
 
