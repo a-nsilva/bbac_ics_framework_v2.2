@@ -17,7 +17,7 @@
         "ms-vscode.cpptools"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python3.10",
+        "python.defaultInterpreterPath": "/usr/bin/python3",
         "editor.formatOnSave": true,
         "files.exclude": {
           "**/__pycache__": true,
@@ -30,7 +30,7 @@
   "remoteEnv": {
     "ROS_DOMAIN_ID": "42",
     "ROS_LOCALHOST_ONLY": "1",
-    "PYTHONPATH": "/workspaces/bbac_ics_framework_v2.2/src"
+    "PYTHONPATH": "/workspaces/bbac_ics_framework/src"
   },
   
   "postCreateCommand": "bash setup.sh",
