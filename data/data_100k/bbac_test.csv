@@ -1,8 +1,0 @@
-log_id,timestamp,session_id,user_id,agent_type,robot_type,human_role,action,resource,resource_type,human_present,emergency_flag,location,previous_action,auth_status,attempt_count,rule_applied
-log_20251203_112835_844375_robot_inspection_29,2025-12-03T11:28:35.844375,session_20251203_110000_robot_inspection_29,robot_inspection_29,robot,inspection_robot,,write,sensor_temperature_02,sensor,False,False,inspection_area,monitor,,,
-log_20251203_112836_268876_robot_camera_25,2025-12-03T11:28:36.268876,session_20251203_110000_robot_camera_25,robot_camera_25,robot,camera_robot,,read,camera_zone_c,camera,False,False,assembly_line,write,,,
-log_20251203_112836_274964_robot_assembly_14,2025-12-03T11:28:36.274964,session_20251203_110000_robot_assembly_14,robot_assembly_14,robot,assembly_robot,,read,zone_assembly_b,zone,False,False,zone_d,read,,,
-log_20251203_114144_750237_robot_inspection_34,2025-12-03T11:28:38.629105,session_20251203_110000_robot_inspection_34,robot_inspection_34,robot,inspection_robot,,write,sensor_pressure_01,sensor,False,False,maintenance_bay,read,,,
-log_20251203_112835_670715_robot_inspection_34,2025-12-03T11:28:39.129105,session_20251203_110000_robot_inspection_34,robot_inspection_34,robot,inspection_robot,,read,sensor_pressure_01,sensor,False,False,maintenance_bay,monitor,,,
-log_20251203_112839_494890_robot_transport_39,2025-12-03T11:28:39.494890,session_20251203_110000_robot_transport_39,robot_transport_39,robot,transport_robot,,read,sensor_navigation_01,sensor,True,False,maintenance_bay,read,,,
-log_20251203_112839_876867_robot_assembly_13,2025-12-03T11:28:39.876867,session_20251203_110000_robot_assembly_13,robot_assembly_13,robot,assembly_robot,,write,sensor_force_01,sensor,False,False,zone_c,execute,,,
