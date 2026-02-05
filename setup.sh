@@ -17,7 +17,7 @@ print_success() { echo -e "${GREEN}[✓]${NC} $1"; }
 print_error() { echo -e "${RED}[✗]${NC} $1"; }
 
 PROJECT_DIR=$(pwd)
-WORKSPACE_DIR="$HOME/ros2_ws"
+WORKSPACE_DIR="$HOME/bbac_ics_ws"
 
 # ============================================================================
 # Validar Python 3.10
