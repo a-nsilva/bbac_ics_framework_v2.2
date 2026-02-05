@@ -146,9 +146,7 @@ bbac_framework/
 │   └── 100k/
 │       ├── bbac_trainer.csv
 │       ├── bbac_validation.csv
-│       ├── bbac_test.csv
-│       ├── agents.json
-│       └── anomaly_metadata.json
+│       └── bbac_test.csv
 ├── experiments/     # Evaluation scripts
 │   ├── ablation_study.py
 │   ├── baseline_comparison.py
@@ -163,7 +161,7 @@ bbac_framework/
 │   │   ├── fusion.py        # Layer 4a: Score fusion
 │   │   ├── decision.py      # Layer 4b: Risk classification + RBAC
 │   │   └── learning.py      # Layer 5: Continuous learning
-│   ├── models/      # ML models (LSTM - future)
+│   ├── models/      # ML models (LSTM)
 │   ├── ros/         # ROS2 integration
 │   │   └── bbac_node.py
 │   └── util/        # Utilities
