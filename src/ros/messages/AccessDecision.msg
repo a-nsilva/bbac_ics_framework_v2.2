@@ -16,3 +16,5 @@ LayerDecisionDetail[] layer_decisions  # Array of layer-specific decisions
 # Logging
 bool logged                # Whether decision was logged
 string log_id              # Log entry identifier (optional)
+
+string ground_truth       # Ground truth label ('allow', 'deny', 'mfa', 'review') - apenas datasets
