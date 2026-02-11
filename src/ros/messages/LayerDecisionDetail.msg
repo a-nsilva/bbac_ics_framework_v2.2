@@ -1,5 +1,8 @@
 # BBAC Framework - Layer Decision Detail
 # Individual layer decision within hybrid approach
+# Score + decision + confidence + latency + explanation
+# Uso: agregado em AccessDecision.layer_decisions[]
+# Resultado final consolidado
 
 string layer_name          # Layer name: 'statistical', 'sequence', 'policy', 'fusion', 'rbac_enforcement'
 string decision            # Layer decision: 'grant' or 'deny'
